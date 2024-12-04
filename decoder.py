@@ -43,7 +43,7 @@ def decode_snaking_qr_grid(image_path):
     return decoded_url
 
 def main():
-    image_path = input("Enter the path to the encoded image: ")
+    image_path = 'null_block_qr_grid.png'
     decoded_url = decode_snaking_qr_grid(image_path)
     print("Decoded URL:", decoded_url)
 
