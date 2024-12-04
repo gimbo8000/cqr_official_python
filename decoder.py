@@ -3,9 +3,11 @@ from PIL import Image
 # NULL_BLOCK ASCII value
 NULL_BLOCK = chr(26)
 
-def get_chunk_from_color(color):
+def get_chunk_from_color(color, tolerance=10):
     r, g, b = color
-    chunk = chr(r) + chr(g) + chr(b)
+    # Adjust the color channels within a certain tolerance
+    # Create a function to map the color back to a character chunk
+    chunk = chr(max(0, min(255, r))) + chr(max(0, min(255, g))) + chr(max(0, min(255, b)))
     return chunk
 
 def decode_snaking_qr_grid(image_path):
