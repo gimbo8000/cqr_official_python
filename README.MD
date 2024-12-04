@@ -1,0 +1,1 @@
+just a simple qr code thing it uses the R,G and B color values to store data pls improve i live commits i will filter them thankyou (btw yes it is chatgpt code I had an idea and wanted it on here qick, so I asked help from chatgpt it will be in kotlin and java soon)
